@@ -1,0 +1,123 @@
+<!DOCTIPE HTML>
+<html  lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title> FORM REGISTER </title>
+		<script src="script.js"></script>
+		<link rel="stylesheet" href="css/bootstrap.css"/>
+		<style>
+			body{
+				background-color:beige;
+			}
+			h1{
+				color:purple;
+				font-family: Arial, Helvetica, sans-serif;
+			}
+		</style>
+		<style>
+			p {
+				margin-left: 1.5em;
+			}
+			
+			#nf {
+				color:red;
+			}
+			.ganjil{
+				color:yellow;
+				background-color: black;
+			}
+		</style>
+	</head>
+	<body bgcolor="beige" text="purple">
+		<h1 align="center"> Form Registration</h1>
+		<h2 style="font-size:20px;color:red;text-align:center"> UKM ANZni UPI Kampus Serang</h2>
+		<hr/>
+	<body>
+		<form action="proses.php" method="POST"> 
+		<fieldset style="background-color:beige;">
+			
+			<h2 class="ganjil">BIODATA PRIBADI</h2>
+			<div>
+				<p id="nf">
+				<label> Nama Lengkap </label>
+				<div>
+					<input type="text" name="nama" value="" size="30" />
+				</div>
+				</p>
+			</div>
+			<div>
+				<p id="nf">
+				<label for="tanggal_lahir">Tanggal Lahir</label>
+				<div>
+					<input type="date" name="tanggal_lahir" value="2001-08-04" id="tanggal_lahir" />
+				</div>
+				</p>
+			</div>
+			<div>
+				<p id="nf">
+				<label> Jenis Kelamin </label>
+				<div>
+					<input type="radio" name="jk" value="L" checked />Laki-Laki
+					<input type="radio" name="jk" value="P"  />Perempuan
+				</div>
+				</p>
+			</div>
+			<div>
+				<p id="nf">
+				<label> Agama </label>
+				<div>
+					<input type="radio" name="a" value="I" checked />Islam
+					<input type="radio" name="a" value="B"  />Budha
+					<input type="radio" name="a" value="H"  />Hindu
+					<input type="radio" name="a" value="K"  />Kristen
+					<input type="radio" name="a" value="Ka"  />Katholik
+					<input type="radio" name="a" value="Ko"  />Konghucu
+				</div>
+				</p>
+			</div>
+			<div>
+				<p id="nf">
+				<label> Email </label>
+				<div>
+					<input type="text" name="email" value="" size="30" />
+				</div>
+				</p>
+			</div>
+			<div>
+				<p id="nf">
+				<label> No HP </label>
+				<div>
+					<input type="text" name="no hp" value="" size="30" />
+				</div>
+				</p>
+			</div>
+			<div>
+				<p id="nf">
+				<label> Alamat </label>
+				<div>
+					<textarea name="alamat" rows="4" cols="30"></textarea>
+				</div>
+				</p>
+			</div>
+			<div>
+				<p id="nf">
+				<label> Pilihan Bidang </label>
+				<div>
+					<select name="bidang">
+						<option value="">--Pilih--</option>
+						<option value="Seni Rupa">Seni Rupa</option>
+						<option value="Seni Tari">Seni Tari</option>
+						<option value="Seni Teater">Seni Teater</option>
+						<option value="Seni Musik">Seni Musik</option>
+						<option value="Seni Sastra">Seni Sastra</option>
+					</select>
+				</div>
+				</p>
+			</div>
+		</fieldset>
+		<div>
+			<input type="Submit" value="Submit" name="Proses" />
+		</div>
+		</form>
+	</body>
+</html>
